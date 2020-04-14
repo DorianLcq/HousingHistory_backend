@@ -1,6 +1,6 @@
 from django.db import models
+import datetime
 
- 
 class HousingHistory(models.Model):
     postcode = models.CharField(max_length=10, blank=False, default='')
     addressLine1 = models.CharField(max_length=35, blank=False, default='')

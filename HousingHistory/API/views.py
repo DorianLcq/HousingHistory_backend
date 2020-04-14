@@ -10,9 +10,4 @@ class HousingHistoryViewSet(viewsets.ModelViewSet):
     queryset = HousingHistory.objects.all()
     serializer_class = HousingHistorySerializer 
     
-    #def list(self, request, *args, **kwargs):
-    #    housinghistories = HousingHistory.objects.all()
-    #    serializer = ArticleMiniSerializer(articles, many=True)
-    #    return Response(serializer.data)
-    
 
