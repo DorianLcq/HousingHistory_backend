@@ -4,8 +4,9 @@ from rest_framework import routers
 from API import views
 
 router = routers.DefaultRouter()
+router.register(r'users', views.UserViewSet)
 router.register(r'housinghistory', views.HousingHistoryViewSet)
-
+router.register(r'emails', views.EmailViewSet)
 
 urlpatterns = [
     path('admin/', admin.site.urls),
